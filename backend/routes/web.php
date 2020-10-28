@@ -16,3 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// 一般ユーザー側
+Route::namespace('Frontend')->prefix('/frontend')->name('frontend.')->group(function () {
+    Auth::routes();
+
+    Route::middleware('auth:user')->group(function () {
+        Route::get('/home', 'HomeController@index')->name('home');
+    });
+});
+
+
+// 管理ユーザー側
+Route::namespace('Backend')->prefix('/backend')->name('backend.')->group(function () {
+
+    Auth::routes();
+
+    Route::middleware('auth:admin')->group(function () {
+        Route::get('/home', 'HomeController@index')->name('home');
+    });
+});
