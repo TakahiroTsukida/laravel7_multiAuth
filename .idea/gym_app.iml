@@ -28,6 +28,7 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/laravel/ui" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/league/mime-type-detection" />
